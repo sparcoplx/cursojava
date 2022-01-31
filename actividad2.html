@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css" type="text/css">
+    <script defer src="js/formulario.js"></script>
+    <title>Actividad Nro 2</title>
+</head>
+<body>
+    <div class="card-panel teal lighten-4">
+        <div class="form">
+            <h1 class="teal-text" style="font-size:3vw;">Formulario</h1>
+            <form id="formulario" class="formulario" method="get" action="form.php">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="nombres" type="text" name="name" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}" class="validate" required>
+                        <label for="nombres">Nombres:</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="ap_pat" type="text" name="ap_pat" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}" class="validate" required>
+                        <label for="ap_pat">Apellido Paterno:</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="ap_mat" type="text" name="ap_mat" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}" class="validate" required>
+                        <label for="ap_mat">Apellido Materno:</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="age" type="number" name="age" min="1" max="120" class="validate" required>
+                        <label for="age">Edad:</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="address" type="text" name="address" pattern="/^[a-zA-ZÀ-ÿ\s]{1,40}$/" class="validate" required>
+                        <label for="address">Domicilio:</label>
+                    </div>
+                        <p><label><input class="with-gap" name="alergico" type="radio" value="si" /><span>Alergico</span></label></p>
+                        <p><label><input class="with-gap" name="alergico" type="radio" value="No" checked/><span>No es alergico</span></label></p>
+                    <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea" name="medicamentos"></textarea>
+                        <label for="textarea1">Medicamentos contraindicados:</label>
+                    </div>
+                    <p>
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Enviar Formulario
+                        <i class="material-icons right">send</i>
+                        </button>
+                    </p>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <div class="footer">
+                    Creado por Felix Vilches, Temuco 2022
+            </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </div>
+</body>
+</html>
